@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <input id="score1" type="text" placeholder="Điểm Toán">
+    <input id="score2" type="text" placeholder="Điểm Lý">
+    <input id="score3" type="text" placeholder="Điểm Hoá">
+    <button onclick="scoreMidium()">Score midium</button>
+</table>
+</body>
+<script>
+    function scoreMidium() {
+        let scoreMath = document.getElementById("score1").value;
+        scoreMath = parseInt(scoreMath);
+        let scorePhysic = document.getElementById("score2").value;
+        scorePhysic = parseInt(scorePhysic)
+        let scoreChemistry = document.getElementById("score3").value;
+        scoreChemistry = parseInt(scoreChemistry)
+        let midium = (scorePhysic + scoreMath + scoreChemistry) / 3;
+        alert("Điểm trung bình: " + midium);
+    }
+
+</script>
+</html>
