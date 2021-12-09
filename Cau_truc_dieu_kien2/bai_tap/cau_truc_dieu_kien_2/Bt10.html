@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let bac1 = 1678;
+    let bac2 = 1734;
+    let bac3 = 2014;
+    let bac4 = 2536;
+    let bac5 = 2834;
+    let bac6 = 2927;
+    let soDien = parseInt(prompt("Số điện bạn đã sử dụng"));
+    let tienDien = 0;
+    if(soDien < 0){
+        alert("Vui lòng nhập lại số điện không nhỏ hơn 0");
+    }else if(soDien <= 50){
+        tienDien = soDien*bac1;
+        alert("Bạn đã sử dụng 0-50kWh số tiền phải trả: "+tienDien);
+    }else if(soDien <= 100){
+        tienDien = 50*bac1+((soDien-50)*bac2);
+        alert("Bạn đã sử dụng 51-100kWh số tiền phải trả: "+tienDien);
+    }else if(soDien <= 200){
+        tienDien = 50*bac1+(50*bac2)+((soDien-100)*bac3);
+        alert("Bạn đã sử dụng 101-200kWh số tiền phải trả: "+tienDien);
+    }else if(soDien <= 300){
+        tienDien = 50*bac1+(50*bac2)+(100*bac3)+((soDien-200)*bac4);
+        alert("Bạn đã sử dụng 201-300kWh số tiền phải trả: "+tienDien);
+    }else if(soDien <= 400){
+        tienDien = 50*bac1+(50*bac2)+(100*bac3)+(100*bac4)+((soDien-300)*bac5);
+        alert("Bạn đã sử dụng 301-400kWh số tiền phải trả: "+tienDien);
+    }else{
+        tienDien = 50*bac1+(50*bac2)+(100*bac3)+(100*bac4)+(100*bac5)+((soDien-400)*bac6);
+        alert("Bạn đã sử dụng 201-300kWh số tiền phải trả: "+tienDien);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soPhut = parseInt(prompt("Thời gian bạn sử dụng"));
+    let phi;
+    const phiCoDinh = 25;
+    let tong;
+    if(soPhut > 200){
+        phi = (soPhut-200)*200+150*400+50*600;
+    }else if(soPhut > 50){
+        phi = (soPhut-50)*400+50*600;
+    }else{
+        phi = soPhut*600;
+    }
+    tong = 0.01*phi+phiCoDinh;
+    alert("Bạn đã gọi "+soPhut+" phút");
+    alert("Cước điện thoại của gia đình bạn: "+tong+" VNĐ");
+
+</script>
+
+</body>
+</html>

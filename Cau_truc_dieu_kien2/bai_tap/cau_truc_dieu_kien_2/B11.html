@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let thueSuat;
+  let luong = parseInt(prompt("Lương của bạn:"));
+  let soThue;
+  let luongRong;
+    if(luong > 15){
+        soThue = luong*30/100;
+        thueSuat = 30;
+    }else if(luong >= 7){
+        soThue = luong*20/100;
+        thueSuat = 20;
+    }else{
+        soThue = luong*10/100;
+        thueSuat = 10;
+    }
+    luongRong = luong - soThue;
+    alert("Lương của bạn: "+luong);
+    alert("Thuế thu nhập với mức thuế suất: "+ thueSuat + " = " +soThue);
+    alert("Số tiền lương còn lại bạn nhận được: "+luongRong);
+</script>
+</body>
+</html>
