@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<button type="button" onclick="choi()">Chơi</button>
+<script>
+    function choi(){
+        let max =prompt("Nhập vào giá trị lớn nhất cần đoán")*1;
+        let random = Math.floor(Math.random()*max);
+        let count = 0;
+        do{
+            count++;
+            let nhapSo = prompt("Nhập số bạn đoán lần thứ"+count)*1;
+            if(nhapSo == random){
+                alert("Bạn đã đoán đúng");
+                break;
+            }else if(nhapSo != random){
+                alert("Mời bạn nhập lại");
+            }else{
+                alert("Bạn đã đoán đúng");
+            }
+            if(count == 3){
+                alert("Bạn đã dùng quá số lần quy định");
+            }
+        }while(!(count == 3));
+    }
+    // let phamVi = parseInt(prompt("Trò chơi đoán số từ 1 - "))
+    // let nhapSo = parseInt(prompt("Nhập vào số muốn đoán"))
+    // let soRamdom
+    // if(phamVi > 0){
+    //     soRamdom = Math.floor(Math.random()*phamVi)
+    //     if(soRamdom == nhapSo){
+    //         alert("Bạn đã đoán đung")
+    //     }else{
+    //         while (soRamdom != nhapSo){
+    //             alert("Bạn đoán sai số đúng là "+soRamdom)
+    //             nhapSo = parseInt(prompt("Nhập vào số muốn đoán"))
+    //         }
+    //         alert("Bạn đoán đúng")
+    //     }
+    // }
+
+</script>
+
 </body>
 </html>

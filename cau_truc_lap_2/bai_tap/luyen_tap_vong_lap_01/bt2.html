@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let nhietDoHienTai = Number(prompt("Nhập vào nhiệt độ"))
+    while (nhietDoHienTai < 20 || nhietDoHienTai > 100){
+        if(nhietDoHienTai < 20){
+            alert("Tăng nhiệt độ")
+            nhietDoHienTai = Number(prompt("Nhập vào nhiệt độ"))
+        }else if(nhietDoHienTai > 100){
+            alert("Giảm nhiệt độ")
+            nhietDoHienTai = Number(prompt("Nhập vào nhiệt độ"))
+        }else{
+            alert("Nhiệt độ bình thường");
+        }
+    }
+
+</script>
+
 </body>
 </html>

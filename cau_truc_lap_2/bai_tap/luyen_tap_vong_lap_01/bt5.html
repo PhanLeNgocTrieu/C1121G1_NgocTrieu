@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    const number = parseInt(prompt("Mời bạn nhập số lượng phần tử trong dãy: "));
+    let sum = 0;
+    let n1 = 0, n2 = 1, n3;
+    for(let i = 1; i <= number; i++) {
+        n3 = n1 + n2;
+        n1 = n2;
+        n2 = n3;
+    }
+    for(let i = 1; i <= n3;i++){
+        sum+=n3;
+        alert("Sum : "+sum);
+        break;
+    }
+</script>
 </body>
 </html>

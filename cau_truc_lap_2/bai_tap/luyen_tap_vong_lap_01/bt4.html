@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    const number = parseInt(prompt("Mời bạn nhập số lượng phần tử trong dãy: "));
+    let n1 = 0, n2 = 1, n3;
+    for(let i = 1; i <= number; i++){
+        n3 = n1 + n2;
+        n1 = n2;
+        n2 = n3;
+        if(n3 % 5 === 0){
+            document.write("Số đầu tiên chia hết cho 5 trong dãy: " +n3);
+            break;
+        }
+    }
+
+</script>
 </body>
 </html>

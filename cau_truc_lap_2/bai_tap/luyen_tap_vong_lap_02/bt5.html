@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-  let money = prompt('nhập số tiền gửi :');
-  let month = prompt('nhập số tháng gửi :');
-  let laiSuat = prompt('nhập vào lãi suất hàng tháng :');
-  let tienLaiNganHang = money;
+  let soTienGui = prompt('nhập số tiền gửi :')*1;
+  let soThangGui = prompt('nhập số tháng gửi :')*1;
+  let laiSuat = prompt('nhập vào lãi suất hàng tháng :')*1;
+  let tienLaiNganHang = soTienGui;
   let i= 1;
-  while(i <= month){
-    tienLaiNganHang *= (1+ laiSuat/100);
+  while(i <= soThangGui){
+    tienLaiNganHang *= laiSuat/100);
     i++;
   }
   document.write(tienLaiNganHang);
