@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let money = prompt('nhập số tiền gửi :');
+  let month = prompt('nhập số tháng gửi :');
+  let laiSuat = prompt('nhập vào lãi suất hàng tháng :');
+  let tienLaiNganHang = money;
+  let i= 1;
+  while(i <= month){
+    tienLaiNganHang *= (1+ laiSuat/100);
+    i++;
+  }
+  document.write(tienLaiNganHang);
+
+</script>
+
+</body>
+</html>
