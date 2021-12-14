@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let mang=[];
+    let chieuDai=parseInt(prompt("Số lượng phần tử trong mảng: "));
+    for(let i = 0;i < chieuDai;i++){
+        mang[i]=parseInt(prompt("Phần tử "+i));
+        console.log(mang[i]);
+    }
+    let max=[0];
+    let index=0;
+    for(let i=1;i<mang.length;i++){
+        if(max<mang[i])
+            max=mang[i];
+            index=i;
+    }
+    console.log(max);
+    document.write("Giá trị lớn nhất: "+max);
+    document.write("<br>");
+    let tong=0;
+    let trungBinh;
+    for(let i=0;i<chieuDai;i++){
+        tong+=mang[i];
+    }
+    trungBinh=tong/chieuDai;
+    console.log(tong);
+    console.log(trungBinh);
+    document.write("Trung bình các phần tử: "+trungBinh);
+
+
+</script>
 </body>
 </html>

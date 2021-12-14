@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let mang=[];
+    let chieuDai=parseInt(prompt("Số lượng phần tử trong mảng: "));
+    for(let i = 0;i < chieuDai;i++){
+        mang[i]=parseInt(prompt("Phần tử "+i));
+        console.log(mang[i]);
+    }
+  let phanTuAm = 0;
+  for (i in mang ){
+    if (mang[i]< 0){
+      phanTuAm++;
+    }
+  }
+  alert("có "+ phanTuAm  +" phần tử là số âm");
+</script>
 </body>
 </html>

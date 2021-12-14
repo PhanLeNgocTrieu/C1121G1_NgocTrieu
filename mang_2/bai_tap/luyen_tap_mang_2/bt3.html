@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ktuTrongMang = ['a','b','c','dad','son','child','1',2,3,4];
+    let ktuSo = 0;
+    for (i in ktuTrongMang){
+        if(typeof ktuTrongMang[i] === 'number'){
+            ktuSo++;
+        }
+    }
+    alert("Số lượng ký tự số là " + ktuSo);
+</script>
+</body>
+</html>

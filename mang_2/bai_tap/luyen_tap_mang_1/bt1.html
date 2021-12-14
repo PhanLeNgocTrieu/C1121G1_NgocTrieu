@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let a=[];
+  let chieuDai= parseInt(prompt("Số lượng phần tử:"));
+  for(let i=0;i<chieuDai;i++){
+    a[i]=parseInt(prompt("Nhập phân tử "+i));
+    if(a[i] >= 10){
+      console.log(a[i]);
+    }
+    document.write("Phần tử "+i+":"+a[i]+"<br>");
+  }
+</script>
+
 </body>
 </html>
