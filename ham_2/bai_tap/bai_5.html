@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt('Nhập  tên các ngôi sao :');
+    let a = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', ' Leo'];
+    let chomSao = true;
+    function showMess(){
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] == input) {
+                alert(b[i])
+                chomSao = false;
+                return chomSao;
+            }
+        }
+        if ( chomSao == true)
+            alert('Không có chòm sao bạn tìm.');
+    }
+    showMess();
+</script>
+</body>
+</html>

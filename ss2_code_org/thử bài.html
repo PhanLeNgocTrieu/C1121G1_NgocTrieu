@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>maytinhdongian</title>
+    <title>Title</title>
 </head>
 <body>
 <script>
@@ -10,10 +10,10 @@
 
 
     // // Tam giác vuông cân rỗng
-    // let h = parseInt(prompt("Nhập chiều cao"))
-    // for (let i = 0; i < h; i++){
+    // let height = parseInt(prompt("Nhập chiều cao"))
+    // for (let i = 0; i < height; i++){
     //     for (let j = 0; j < i; j++){
-    //         if( j === 0  ||  j === i-1  ||  i === h-1 ){
+    //         if( j === 0  ||  j === i-1  ||  i === height-1 ){
     //             document.write("&nbsp;*&nbsp;");
     //         }else {
     //             document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
@@ -23,18 +23,24 @@
     // }
 
     // // Tam giác cân full sao
-    // let h = parseInt(prompt("Nhập chiều cao"));
-    // for (let i = 0 ; i < h ; i++){
-    //     for (let j = 0 ; j < 2 * h ; j++){
-    //         let a = ((2 * h - 1) - (2 * i + 1))/2;
-    //         if (j > a - 1 && j < a+(2 * i + 1)){
-    //             document.write("*");
-    //         }else {
-    //             document.write("&ensp;");
-    //         }
-    //     }
-    //     document.write("</br>");
-    // }
+        let height = parseInt(prompt("Nhập chiều cao"));
+        for (let i = 0 ; i < height ; i++){
+            for(let j = 0;j <= i;j++){
+                document.write("*");
+            }
+            document.write("<br>")
+        }
+        // TH2:
+        //     for (let j = 0 ; j < 2 * height ; j++){
+        //         let a = ((2 * height - 1) - (2 * i + 1))/2;
+        //         if (j > a - 1 && j < a+(2 * i + 1)){
+        //             document.write("*");
+        //         }else {
+        //             document.write("&ensp;");
+        //         }
+        //     }
+        //     document.write("</br>");
+        // }
 
 
     // // tam giác cân rỗng
@@ -53,11 +59,11 @@
 
 
     // // Hình chữ nhật rỗng
-    // let m = parseInt(prompt("Nhật chiều rộng"));
-    // let n = parseInt(prompt("Nhật chiều dài"));
-    // for(let i = 1; i <= m; i++){
-    //     for(let j = 1; j <= n; j++) {
-    //         if (i === 1 || j === 1 || i === m || j === n ) {
+    // let height = parseInt(prompt("Nhật chiều rộng"));
+    // let width = parseInt(prompt("Nhật chiều dài"));
+    // for(let i = 1; i <= height; i++){
+    //     for(let j = 1; j <= width; j++) {
+    //         if (i === 1 || j === 1 || i === height || j === width ) {
     //         document.write("*");
     //         }
     //         else {
@@ -309,27 +315,25 @@
     // trong mảng đó
 
 
-
-
-    let a = parseInt(prompt("Mời người dùng nhập số a"));
-    let b = parseInt(prompt("Mời người dùng nhập số b"));
-    let sumA = 0;
-    let sumB = 0;
-    for(let i = 1 ; i < a ; i++){
-        if(a % i === 0){
-            sumA += i;
-        }
-    }
-    for(let i = 1 ; i < b ; i++){
-        if(b % i === 0){
-            sumB += i;
-        }
-    }
-    if(sumA === b && sumB === a){
-        document.write("Yes");
-    }else{
-        document.write("No");
-    }
+    // let a = parseInt(prompt("Mời người dùng nhập số a"));
+    // let b = parseInt(prompt("Mời người dùng nhập số b"));
+    // let sumA = 0;
+    // let sumB = 0;
+    // for(let i = 1 ; i < a ; i++){
+    //     if(a % i === 0){
+    //         sumA += i;
+    //     }
+    // }
+    // for(let i = 1 ; i < b ; i++){
+    //     if(b % i === 0){
+    //         sumB += i;
+    //     }
+    // }
+    // if(sumA === b && sumB === a){
+    //     document.write("Yes");
+    // }else{
+    //     document.write("No");
+    // }
 
 
 

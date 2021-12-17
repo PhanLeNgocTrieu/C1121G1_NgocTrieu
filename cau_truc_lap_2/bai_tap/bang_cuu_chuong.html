@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    tab = " <table border='1' width='1000' height='200' cellSpacing='0' cellPadding='3'>"
+    for (let i = 1; i <= 9; i++) {
+        tab = tab + "<tr>";
+        for (let j = 2; j <= 9; j++) {
+            tab =tab+"<td>" + j + "x" + i + "=" + (i * j) +"</td>";
+        }
+    }
+    tab = tab+" <table>";
+    document.write(tab);
+</script>
 </body>
 </html>
